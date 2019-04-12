@@ -30,6 +30,7 @@
         }
     },
     "configurationArguments": {
+       "applicationExtensionKey": "a4b346f1-513d-4174-9903-3d9afe9b79c2",
        "save": {
            "url": "https://jbtemplate.herokuapp.com/journeybuilder/save"
        },
