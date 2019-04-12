@@ -86,14 +86,13 @@ define([
         }
     }
 
-    function onGetTokens (tokens) {
-        // Response: tokens = { token: <legacy token>, fuel2token: <fuel api token> }
-        // console.log(tokens);
+    function onGetTokens(tokens) {
+        console.log(tokens);
+        authTokens = tokens;
     }
 
-    function onGetEndpoints (endpoints) {
-        // Response: endpoints = { restHost: <url> } i.e. "rest.s1.qa1.exacttarget.com"
-        // console.log(endpoints);
+    function onGetEndpoints(endpoints) {
+        console.log(endpoints);
     }
 
     function onClickedNext () {
@@ -185,10 +184,11 @@ define([
         // may be overridden as desired.
         payload.name = name;
 
-        payload['arguments'].execute.inArguments = [{ "message": value }];
+        payload['arguments'].execute.inArguments = [{ "tokens": authTokens,"message": value }];
 
         payload['metaData'].isConfigured = true;
-
+        
+        
         connection.trigger('updateActivity', payload);
     }
 
