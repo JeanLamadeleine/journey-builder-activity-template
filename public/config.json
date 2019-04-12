@@ -26,21 +26,21 @@
                     "foundSignupDate": ""
                 }
             ],
-            "url": "https://some-endpoint.com/execute"
+            "url": "https://jbtemplate.herokuapp.com/execute"
         }
     },
     "configurationArguments": {
        "save": {
-           "url": "URI/for/your/activity/save"
+           "url": "https://jbtemplate.herokuapp.com/save"
        },
        "publish": {
-           "url": "URI/for/your/activity/publish"
+           "url": "https://jbtemplate.herokuapp.com/publish"
        },
        "validate": {
-           "url": "URI/for/your/activity/validate"
+           "url": "https://jbtemplate.herokuapp.com/validate"
        },
        "stop": {
-           "url": "URI/for/your/activity/stop"
+           "url": "https://jbtemplate.herokuapp.com/stop"
        }
     },
     "wizardSteps": [
