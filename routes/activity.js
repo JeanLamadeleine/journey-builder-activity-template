@@ -89,6 +89,7 @@ exports.execute = function (req, res) {
             
             logData(req);
             res.send(200, 'Execute');
+            //res.status(200).send('Execute')
         } else {
             console.error('inArguments invalid.');
             return res.status(400).end();
