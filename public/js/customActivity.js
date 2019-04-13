@@ -88,7 +88,7 @@ define([
 
     function onGetTokens(tokens) {
         console.log(tokens);
-        authTokens = tokens;
+        //authTokens = tokens;
     }
 
     function onGetEndpoints(endpoints) {
@@ -184,7 +184,8 @@ define([
         // may be overridden as desired.
         payload.name = name;
 
-        payload['arguments'].execute.inArguments = [{ "tokens": authTokens,"message": value }];
+        //payload['arguments'].execute.inArguments = [{ "tokens": authTokens,"message": value }];
+        payload['arguments'].execute.inArguments = [{ "message": value }];
 
         payload['metaData'].isConfigured = true;
         
