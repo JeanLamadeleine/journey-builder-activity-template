@@ -26,7 +26,7 @@
                     "foundSignupDate": ""
                 }
             ],
-            "url": "https://jbtemplate.herokuapp.com/execute",
+            "url": "https://jbtemplate.herokuapp.com/activity/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -38,22 +38,22 @@
     "configurationArguments": {
        "applicationExtensionKey": "a4b346f1-513d-4174-9903-3d9afe9b79c2",
        "save": {
-           "url": "https://jbtemplate.herokuapp.com/save",
+           "url": "https://jbtemplate.herokuapp.com/activity/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-           "url": "https://jbtemplate.herokuapp.com/publish",
+           "url": "https://jbtemplate.herokuapp.com/activity/publish",
           "verb": "POST",
         "useJwt": true
        },
        "validate": {
-           "url": "https://jbtemplate.herokuapp.com/validate",
+           "url": "https://jbtemplate.herokuapp.com/activity/validate",
           "verb": "POST",
         "useJwt": true
        },
        "stop": {
-           "url": "https://jbtemplate.herokuapp.com/stop",
+           "url": "https://jbtemplate.herokuapp.com/activity/stop",
           "verb": "POST",
         "useJwt": true
        }
