@@ -11,8 +11,8 @@ define([
     $(window).ready(onRender);
 
     connection.on('initActivity', initialize);
-  /*  connection.on('requestedTokens', onGetTokens);
-    connection.on('requestedEndpoints', onGetEndpoints);*/
+    connection.on('requestedTokens', onGetTokens);
+    connection.on('requestedEndpoints', onGetEndpoints);
 
     connection.on('clickedNext', save);
    
@@ -20,9 +20,8 @@ define([
         // JB will respond the first time 'ready' is called with 'initActivity'
         connection.trigger('ready');
 
-        
-        //connection.trigger('requestTokens');
-        //connection.trigger('requestEndpoints');
+        connection.trigger('requestTokens');
+        connection.trigger('requestEndpoints');
 
     }
 
@@ -57,20 +56,21 @@ define([
         });
     }
 
-    /*function onGetTokens(tokens) {
+    function onGetTokens(tokens) {
         console.log(tokens);
         authTokens = tokens;
     }
 
     function onGetEndpoints(endpoints) {
         console.log(endpoints);
-    }*/
+    }
 
     function save() {
-       /* var postcardURLValue = $('#postcard-url').val();
-        var postcardTextValue = $('#postcard-text').val();*/
+        var postcardURLValue = $('#postcard-url').val();
+        var postcardTextValue = $('#postcard-text').val();
 
         payload['arguments'].execute.inArguments = [{
+            "tokens": authTokens,
             "emailAddress": "{{Contact.Attribute.Test-Jean.EmailAddress}}"
         }];
         
