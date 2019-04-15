@@ -16,9 +16,6 @@
             "inArguments": [
                 {
                     "emailAddress": "{{InteractionDefaults.Email}}"
-                },
-                {
-                    "phoneNumber": "{{Contact.Default.PhoneNumber}}"
                 }
             ],
             "outArguments": [
