@@ -86,7 +86,7 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            
+            console.error('in execute');
             logData(req);
             res.send(200, 'Execute');
             //res.status(200).send('Execute')
