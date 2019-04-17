@@ -83,7 +83,7 @@
                 "outArguments": [
                     {
                         "foundSignupDate": {
-                            "dataType": "Date",
+                            "dataType": "Text",
                             "direction": "out",
                             "access": "visible"
                         }
