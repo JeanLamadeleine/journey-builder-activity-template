@@ -18,11 +18,7 @@
                     "emailAddress": "{{InteractionDefaults.Email}}"
                 }
             ],
-            "outArguments": [
-                {
-                    "foundSignupDate": "test"
-                }
-            ],
+            "outArguments": [],
             "url": "https://jbtemplate.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
@@ -80,15 +76,7 @@
                         }
                     }
                 ],
-                "outArguments": [
-                    {
-                        "foundSignupDate": {
-                            "dataType": "Text",
-                            "direction": "out",
-                            "access": "visible"
-                        }
-                    }
-                ]
+                "outArguments": []
             }
         }
     }
